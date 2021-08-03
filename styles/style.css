@@ -26,10 +26,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: -200px 880%, 130% -880%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   background-color: #19a1ad;
   color: #2d3248;
   display: -webkit-box;
@@ -43,7 +39,56 @@ body {
           align-items: center;
 }
 
+.backgrounds {
+  position: absolute;
+  z-index: 9;
+}
+
+.backgrounds > * {
+  width: 70%;
+}
+
+.backgrounds > :first-child {
+  position: fixed;
+  left: -25%;
+  top: -50%;
+  z-index: 999;
+}
+
+.backgrounds > :last-child {
+  position: fixed;
+  right: -25%;
+  bottom: -50%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 800px) {
+  .backgrounds > * {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .backgrounds > * {
+    width: 100%;
+  }
+  .backgrounds > :first-child {
+    position: fixed;
+    left: -25%;
+    top: -15%;
+    z-index: 999;
+  }
+  .backgrounds > :last-child {
+    position: fixed;
+    right: -25%;
+    bottom: -15%;
+    z-index: 999;
+  }
+}
+
 .card {
+  position: relative;
+  z-index: 99;
   width: 90%;
   max-width: 350px;
   background-color: #fff;

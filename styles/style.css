@@ -1,0 +1,145 @@
+/* My Notes =>  */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 63%;
+  /* 1rem => 10px */
+}
+
+body {
+  font-size: 16px;
+  /* Default Font Size => 16px */
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: -200px 880%, 130% -880%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #19a1ad;
+  color: #2d3248;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.top-sec__banner {
+  width: 100%;
+  height: 150px;
+  background: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.top-sec__texts {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  padding: 6.5rem 3rem 2.5rem;
+}
+
+.top-sec__avatar {
+  border-radius: 100%;
+  border: 5px solid #fff;
+  position: absolute;
+  top: -50%;
+}
+
+.top-sec__name {
+  font-size: 1.8rem;
+}
+
+.top-sec__name .top-sec__number {
+  color: #828285;
+  font-weight: 400;
+}
+
+.top-sec__city {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #828285;
+}
+
+.card__bottom-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem 0.5rem;
+  border-top: 1.5px solid #ececec;
+}
+
+.bottom-sec__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.bottom-sec__box__number {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.bottom-sec__box__text {
+  font-size: 1.05rem;
+  letter-spacing: 1.5px;
+  color: #6a6f81;
+}
+/*# sourceMappingURL=style.css.map */
